@@ -8,64 +8,41 @@
 <title>Quick Loan - Instant Loan Services</title>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 
 body{
-font-family:Roboto, sans-serif;
+font-family:Roboto,sans-serif;
 overflow-x:hidden;
 }
 
 /* HERO */
 .hero{
-background:url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c') center/cover no-repeat;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c') center/cover;
 color:white;
 padding:120px 20px;
 text-align:center;
-position:relative;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-}
-
-.hero-content{
-position:relative;
-z-index:1;
 }
 
 .hero h1{
-font-size:45px;
+font-size:42px;
 font-weight:700;
 }
 
-.hero p{
-font-size:18px;
-margin:20px 0;
-}
-
-/* CTA BUTTON */
-.call-btn-main{
+.call-btn{
 background:#e4551e;
 color:white;
-padding:15px 40px;
+padding:15px 35px;
 border-radius:40px;
 font-size:20px;
 text-decoration:none;
 display:inline-block;
-transition:.3s;
+margin-top:20px;
 }
 
-.call-btn-main:hover{
+.call-btn:hover{
 background:#c63c0f;
 color:white;
 }
@@ -75,40 +52,32 @@ color:white;
 padding:60px 20px;
 }
 
-.feature-box{
+.box{
 background:#f7f7f7;
 padding:25px;
 border-radius:10px;
-text-align:center;
 margin-bottom:20px;
+text-align:center;
 }
 
-/* FLOAT CALL BUTTON */
+/* FLOAT BUTTON */
 .float-call{
 position:fixed;
-right:15px;
 bottom:80px;
-width:65px;
-height:65px;
+right:15px;
 background:#28a745;
 color:white;
+width:65px;
+height:65px;
 font-size:28px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-animation:pulse 1.5s infinite;
 z-index:9999;
 }
 
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
-}
-
-/* BOTTOM CALL BAR */
+/* BOTTOM BAR */
 .bottom-call{
 position:fixed;
 bottom:0;
@@ -122,81 +91,71 @@ z-index:9999;
 .bottom-call a{
 color:white;
 font-size:18px;
-font-weight:600;
 text-decoration:none;
+font-weight:600;
 }
 
-/* MOBILE */
 @media(max-width:768px){
-
-.hero h1{
-font-size:28px;
-}
-
-.hero p{
-font-size:15px;
-}
-
-.section{
-padding:40px 15px;
-}
-
+.hero h1{font-size:28px;}
+.section{padding:40px 15px;}
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-<a class="navbar-brand" href="#">Quick Loan</a>
-</nav>
-
 <!-- HERO -->
 <section class="hero">
-<div class="hero-content">
 <h1>Apply Loan Online @ Low Interest</h1>
-<p>Instant approval • Fast disbursal • Minimum documentation</p>
+<p>Fast Approval • Minimum Documentation • Instant Support</p>
 
-<a href="tel:+919835329854" class="call-btn-main">
+<a href="tel:+919835329854" class="call-btn">
 📞 Check Eligibility
 </a>
-</div>
 </section>
 
 <!-- ABOUT -->
 <section class="section text-center">
 <div class="container">
-<h2>About Us</h2>
-<p>We provide financial solutions for business, home, and personal loan needs across India with quick approvals and simple processes.</p>
+<h2>About Quick Loan</h2>
+<p>We provide financial solutions across India for home, business, personal and property loans with quick approvals and reliable services.</p>
 </div>
 </section>
 
-<!-- FEATURES -->
+<!-- LOAN DETAILS -->
 <section class="section bg-light">
 <div class="container">
+
+<h2 class="text-center mb-4">Loan Details</h2>
+
 <div class="row">
 
-<div class="col-md-4">
-<div class="feature-box">
-<h3>Fast Approval</h3>
-<p>Loan approval within 3-7 working days.</p>
+<div class="col-md-3">
+<div class="box">
+<h4>Loan Amount</h4>
+<p>₹50,000 to ₹25,00,000</p>
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="feature-box">
-<h3>Affordable Interest</h3>
-<p>Interest rates starting from 6% annually.</p>
+<div class="col-md-3">
+<div class="box">
+<h4>Interest Rate</h4>
+<p>6% to 12% Per Year</p>
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="feature-box">
-<h3>Up To 10 Lakh</h3>
-<p>Flexible loan amount based on eligibility.</p>
+<div class="col-md-3">
+<div class="box">
+<h4>Tenure</h4>
+<p>1 Year to 10 Years</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="box">
+<h4>Processing Fee</h4>
+<p>₹3000 Only</p>
 </div>
 </div>
 
@@ -212,23 +171,23 @@ padding:40px 15px;
 <div class="row mt-4">
 
 <div class="col-md-4">
-<div class="feature-box">
+<div class="box">
 <h4>Home Loan</h4>
-<p>Low interest home loan options.</p>
+<p>Low interest housing loan options.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="feature-box">
+<div class="box">
 <h4>Business Loan</h4>
-<p>Expand or start your business easily.</p>
+<p>Grow your business easily.</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="feature-box">
+<div class="box">
 <h4>Car Loan</h4>
-<p>Finance your dream car quickly.</p>
+<p>Finance your dream vehicle.</p>
 </div>
 </div>
 
@@ -244,23 +203,23 @@ padding:40px 15px;
 <div class="row mt-4">
 
 <div class="col-md-4">
-<div class="feature-box">
+<div class="box">
 <h4>Aadhar Card</h4>
-<p>Valid address and ID proof.</p>
+<p>Valid ID & Address Proof</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="feature-box">
+<div class="box">
 <h4>Bank Statement</h4>
-<p>Recent account statement required.</p>
+<p>Last 6 Month Statement</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="feature-box">
+<div class="box">
 <h4>Income Proof</h4>
-<p>Minimum monthly income ₹10,000.</p>
+<p>Minimum ₹10,000 Monthly</p>
 </div>
 </div>
 
@@ -272,26 +231,56 @@ padding:40px 15px;
 <section class="section text-center">
 <div class="container">
 <h2>Need Loan Assistance?</h2>
-<p>Talk directly with our loan expert now.</p>
+<p>Speak directly with our expert advisor</p>
 
-<a href="tel:+919835329854" class="call-btn-main">
+<a href="tel:+919835329854" class="call-btn">
 📞 Call Now
 </a>
+</div>
+</section>
+
+<!-- ADDRESS -->
+<section class="section bg-light text-center">
+<div class="container">
+<h2>Our Address</h2>
+
+<p>
+D69, Radha Enclave, Bhagat Singh Marg<br>
+Sargasan, Gandhinagar, Gujarat 382421
+</p>
+
+<p><b>Phone:</b> +91 9835329854</p>
+
+</div>
+</section>
+
+<!-- PRIVACY POLICY -->
+<section class="section">
+<div class="container">
+
+<h2 class="text-center mb-4">Privacy Policy</h2>
+
+<p>
+We respect your privacy and are committed to protecting your personal information. 
+Any information shared through phone or communication is used only for loan assistance and will not be shared with third parties without consent.
+</p>
+
+<p>
+We follow secure procedures to ensure your data safety. By contacting us, you agree to our privacy practices.
+</p>
 
 </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="bg-dark text-white text-center p-4">
-<p>Quick Loan © 2026 All Rights Reserved</p>
+<p>© 2026 Quick Loan. All Rights Reserved.</p>
 </footer>
 
 <!-- FLOAT BUTTON -->
-<a href="tel:+919835329854" class="float-call">
-📞
-</a>
+<a href="tel:+919835329854" class="float-call">📞</a>
 
-<!-- BOTTOM CALL -->
+<!-- BOTTOM CALL BAR -->
 <div class="bottom-call">
 <a href="tel:+919835329854">
 📞 Call Now For Instant Loan
